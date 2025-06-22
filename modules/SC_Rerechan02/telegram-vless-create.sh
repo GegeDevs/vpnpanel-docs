@@ -32,7 +32,7 @@ set limitquota "$limitquota"
 set uuid "$uuid"
 
 # Jalankan skrip add-vless
-spawn add-vmess
+spawn add-vless
 
 # 1. Menunggu prompt "Email" dan mengirimkan username
 expect {
