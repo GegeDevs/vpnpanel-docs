@@ -27,7 +27,6 @@ function tunnels_list(){
         vmess
         vless
         trojan
-        noobzvpns
     " | sed 's/^[ \t]*//g;/^$/d'
 }
 
