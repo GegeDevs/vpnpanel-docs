@@ -35,18 +35,8 @@ expect {
     }
 }
 
-# 2. Menunggu prompt 'custom expired' dan mengirimkan enter (pilih 'N')
-expect {
-    -re "(?i)Gunakan custom expired?.*:" {
-        send "\r"
-    }
-    timeout {
-        puts "Error: Tidak menemukan prompt 'custom expired' dalam 15 detik."
-        exit 1
-    }
-}
-
-# 3. Menunggu prompt 'Input Extend' dan mengirimkan jumlah hari
+# 2. Menunggu prompt 'Input Extend' dan mengirimkan jumlah hari
+#    (Blok 'custom expired' telah dihapus karena tidak ada lagi di skrip target)
 expect {
     -re "(?i)Input Extend.*:" {
         send "\$expired\r"
