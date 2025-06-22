@@ -1,8 +1,6 @@
-# SC_AryaBlitar
+# SC_Rerechan02
 
-<!--
 REFERER: [Rerechan02](https://github.com/FN-Rerechan02/Autoscript)
--->
 
 ## Cara Menggunakan
 
