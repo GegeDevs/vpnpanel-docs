@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source_code="GegeDevs/vpnpanel-docs"
-module_name="Rerechan02"
+module_name="SC_Rerechan02"
 bin_dir="/etc/gegevps/bin"
 
 if [[ "$EUID" -ne 0 ]]; then
