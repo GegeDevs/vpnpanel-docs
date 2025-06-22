@@ -28,7 +28,6 @@ function tunnels_list(){
         vless
         trojan
         noobzvpns
-        udpzivpn
     " | sed 's/^[ \t]*//g;/^$/d'
 }
 
