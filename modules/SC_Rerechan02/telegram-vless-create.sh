@@ -31,7 +31,7 @@ set limitip "$limitip"
 set limitquota "$limitquota"
 set uuid "$uuid"
 
-# Jalankan skrip add-vmess
+# Jalankan skrip add-vless
 spawn add-vmess
 
 # 1. Menunggu prompt "Email" dan mengirimkan username
@@ -64,6 +64,6 @@ expect {
     timeout { puts "Error: Timeout saat menunggu prompt Password."; exit 1 }
 }
 
-# Tunggu hingga proses add-vmess selesai
+# Tunggu hingga proses add-vless selesai
 expect eof
 EOF
