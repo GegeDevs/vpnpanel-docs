@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source_code="GegeDevs/vpnpanel-docs"
+source_code="FN-Rerechan02/vpnpanel-docs"
 module_name="SC_Rerechan02"
 bin_dir="/etc/gegevps/bin"
 
