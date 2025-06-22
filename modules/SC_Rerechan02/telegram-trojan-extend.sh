@@ -22,7 +22,7 @@ set expired "$EXPIRED"
 set limitip "$limitip"
 set limitquota "$limitquota"
 
-spawn renew-vmess
+spawn renew-trojan
 
 # 1. Menunggu prompt Username dan mengirimkan isinya
 expect {
