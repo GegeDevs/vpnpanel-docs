@@ -51,7 +51,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] Hashtag Notes
  - [x] Supports Multiple tunnel types
  - [x] Tunnel Duration/Quota Based Plan
- - [x] Add, Reduce, Check Balance Manual
+ - [x] Add, Reduce, Check Balance Client
  - [x] Add, Delete, and List Server
  - [x] Add, Delete, Edit Tunnel Plan
  - [x] Add, Remove, and List Reseller
@@ -70,12 +70,13 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [ ] Hysteria
  - [ ] UDP Custom
  - [ ] Wiregurad VPN
- - [ ] Auto Deposit with Paypal
- - [ ] Auto Deposit with Midtrans
 
-### Payment Gateway Support
+## Payment Gateway Supported
+ 
  - [x] [Tripay](https://tripay.id/login)
  - [x] [OkeConnect](https://www.okeconnect.com/auth/secure_login) / [OrderKuota](https://orderkuota.com/)
+
+*TODO...*
  - [ ] [Paypal](https://www.paypal.com/id/home)
  - [ ] [Midtrans](https://midtrans.com/id)
 
