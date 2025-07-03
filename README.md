@@ -43,7 +43,8 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 ## Features
 
- - [x] Pluginable for Supporting many VPN Server Script 
+ - [x] Pluginable for Supporting many VPN Server Script
+ - [x] Interactive Payment Configuration
  - [x] Supports Multiple tunnel types
  - [x] Admin Panel Dashboard for Centralize Configuration
  - [x] Broadcast Message to All Client
@@ -53,17 +54,18 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] Add, Reduce, Check Balance Manual
  - [x] Add, Delete, and List Server
  - [x] Enable/Disable Server
+ - [x] Tunnel Duration/Quota Based Plan
  - [x] Add, Delete, Edit Tunnel Plan
  - [x] Enable/Disable Tunnel Plan
  - [x] Hide/Show Tunnel Type
+ - [x] Hide/Show IP Server (Client Side)
  - [x] Add, Remove, and List Reseller
  - [x] Add, Remove, and List Admin
  - [x] Maintenance Mode Toggler
  - [x] Hide/Show Payment Gateway
- - [x] Payment Configuration
  - [x] Hide/Show Payment Method
- - [x] Auto Deposit with Payment Gateway [`Tripay`]
- - [x] Auto Deposit with Payment Gateway [`OkeConnect`/`OrderKuota`]
+ - [x] Auto Deposit with Payment Gateway [ [Tripay](https://tripay.id/login) ]
+ - [x] Auto Deposit with Payment Gateway [ [OkeConnect](https://www.okeconnect.com/auth/secure_login) / [OrderKuota](https://orderkuota.com/) ]
 
 *TODO...*
  - [ ] Auto Deposit with Paypal
