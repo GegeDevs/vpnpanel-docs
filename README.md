@@ -64,12 +64,20 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] Maintenance Mode Toggler
  - [x] Hide/Show Payment Gateway
  - [x] Hide/Show Payment Method
- - [x] Auto Deposit with Payment Gateway [ [Tripay](https://tripay.id/login) ]
- - [x] Auto Deposit with Payment Gateway [ [OkeConnect](https://www.okeconnect.com/auth/secure_login) / [OrderKuota](https://orderkuota.com/) ]
 
 *TODO...*
+ - [ ] NoobzVPN
+ - [ ] Hysteria
+ - [ ] UDP Custom
+ - [ ] Wiregurad VPN
  - [ ] Auto Deposit with Paypal
  - [ ] Auto Deposit with Midtrans
+
+### Payment Gateway Support
+ - [x] [Tripay](https://tripay.id/login)
+ - [x] [OkeConnect](https://www.okeconnect.com/auth/secure_login) / [OrderKuota](https://orderkuota.com/)
+ - [ ] [Paypal](https://www.paypal.com/id/home)
+ - [ ] [Midtrans](https://midtrans.com/id)
 
 ## Tunnel Supported
 
