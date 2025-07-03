@@ -3,7 +3,7 @@
 	<a href="https://t.me/gegevps_tunnel_bot"><b>LIVE PREVIEW DEMO</b></a>
 </p>
 
-### Overview
+## Overview
 
 <p align="center">
   <img src="./images/ClientDashboard.png" height="400"/>
@@ -13,7 +13,7 @@
   <img src="./images/TunnelMenu.png" height="300"/>
 </p>
 
-### Installation
+## Installation
 
 1. Install Docker Container on your server. [Follow the tutorial here](https://docs.docker.com/engine/install/)
 2. Clone this Repository
@@ -37,11 +37,11 @@
 
 6. Test `/start` on your bot
 
-### Register VPS IP Address for Access [FREE]
+## Register VPS IP Address for Access [FREE]
 
 Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeVPS_AutoScript_bot). There is a plan for one day every day. You can use it to test the bot's connection to the server.
 
-### Features
+## Features
 
  - [x] Pluginable for Supporting many VPN Server Script 
  - [x] Supports Multiple tunnel types
@@ -69,7 +69,10 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [ ] Auto Deposit with Paypal
  - [ ] Auto Deposit with Midtrans
 
-### Tunnel Supported
+## Tunnel Supported
+
+### Duration Based
+
 | Tunnel | Code | Action Locally | Action Remotely |
 |--|--|--|--|
 | SSH/OpenVPN | `sshovpn` | `info` | `create`, `extend`,<br/>  `delete`, `checklogin`,<br/> `lock`, `unlock` |
@@ -79,6 +82,48 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 | Trojan | `trojan` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | Shadowsocks | `ssocks` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | Socks5 | `socks5` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+
+*Command Format*
+```bash
+/etc/gegevps/bin/telegram-<CODE>-<ACTION>.sh <USERNAME> <PASSWORD> <DAYS>
+```
+
+*example*: 
+
+```bash
+# VMess Create Account
+/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30
+
+# Username: gegeuser
+# Password: gegepass
+# Days: 30
+```
+
+### Quota Based
+
+| Tunnel | Code | Action Locally | Action Remotely |
+|--|--|--|--|
+| VMess | `vmessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| VLess | `vlessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| Trojan | `trojanqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+
+*Command Format*
+```bash
+/etc/gegevps/bin/telegram-<CODE>-<ACTION>.sh <USERNAME> <PASSWORD> <DAYS> <QUOTA> <CYCLE [daily|weekly|montly]>
+```
+
+*example*: 
+
+```bash
+# VMess Create Account
+/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30 25 daily
+
+# Username: gegeuser
+# Password: gegepass
+# Days: 30
+# Quota: 25 GB
+# Cycle: daily
+```
 
 | Action | Details |
 |--|--|
@@ -91,18 +136,3 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 **`unlock` | Unlock tunnel account
 
 > *Locally : *No connection to server required*<br>**Remotely : *Requires connection to server*
-
-### Bash Executioner
-
-File PATH
-
-```bash
-/etc/gegevps/bin/telegram-<CODE>-<ACTION>.sh <USERNAME> <PASSWORD> <DAYS>
-```
-
-*example*: 
-
-```bash
-# VMess Create Account
-/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30
-```
