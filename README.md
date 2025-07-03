@@ -43,27 +43,27 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 ## Features
 
- - [x] Pluginable for Supporting many VPN Server Script
- - [x] Interactive Payment Configuration
- - [x] Supports Multiple tunnel types
  - [x] Admin Panel Dashboard for Centralize Configuration
+ - [x] Pluginable for Supporting many VPN Server Script
  - [x] Broadcast Message to All Client
- - [x] Editable Start Notes
  - [x] Notes for each Tunnel Menu
+ - [x] Editable Start Notes
  - [x] Hashtag Notes
+ - [x] Supports Multiple tunnel types
+ - [x] Tunnel Duration/Quota Based Plan
  - [x] Add, Reduce, Check Balance Manual
  - [x] Add, Delete, and List Server
- - [x] Enable/Disable Server
- - [x] Tunnel Duration/Quota Based Plan
  - [x] Add, Delete, Edit Tunnel Plan
- - [x] Enable/Disable Tunnel Plan
- - [x] Hide/Show Tunnel Type
- - [x] Hide/Show IP Server (Client Side)
  - [x] Add, Remove, and List Reseller
  - [x] Add, Remove, and List Admin
- - [x] Maintenance Mode Toggler
- - [x] Hide/Show Payment Gateway
+ - [x] Enable/Disable Server
+ - [x] Enable/Disable Tunnel Plan
+ - [x] Hide/Show Tunnel Type
  - [x] Hide/Show Payment Method
+ - [x] Hide/Show Payment Gateway
+ - [x] Hide/Show IP Server (Client Side)
+ - [x] Interactive Payment Configuration
+ - [x] Maintenance Mode Toggler
 
 *TODO...*
  - [ ] NoobzVPN
