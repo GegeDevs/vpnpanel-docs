@@ -66,12 +66,6 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] Maintenance Mode Toggler
 
 *TODO...*
- - [ ] Trojan-Go
- - [ ] NoobzVPN
- - [ ] Hysteria 1
- - [ ] Hysteria 2
- - [ ] UDP Custom
- - [ ] Wireguard VPN
  - [ ] QRIS Static as Alternative for QRIS Invalid (*like on [SeaBank](https://www.seabank.co.id/)*)
 
 ## Payment Gateway Supported
@@ -91,11 +85,16 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 |--|--|--|--|
 | SSH/OpenVPN | `sshovpn` | `info` | `create`, `extend`,<br/>  `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | SoftetherVPN | `sevpn` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| WireGuard | `wireguard` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | VMess | `vmess` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | VLess | `vless` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | Trojan | `trojan` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | Shadowsocks | `ssocks` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| Trojan-Go | `trojango` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | Socks5 | `socks5` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| Hysteria1 | `hysteria1` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| Hysteria2 | `hysteria2` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| UDP Custom | `udpcustom` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 
 *Command Format*
 ```bash
@@ -120,6 +119,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 | VMess | `vmessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | VLess | `vlessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | Trojan | `trojanqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| NoobzVPN | `noobz` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 
 *Command Format*
 ```bash
