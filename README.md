@@ -66,6 +66,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] Maintenance Mode Toggler
 
 *TODO...*
+ - [ ] Trojan-Go
  - [ ] NoobzVPN
  - [ ] Hysteria
  - [ ] UDP Custom
