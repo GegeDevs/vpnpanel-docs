@@ -70,7 +70,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [ ] NoobzVPN
  - [ ] Hysteria
  - [ ] UDP Custom
- - [ ] Wiregurad VPN
+ - [ ] Wireguard VPN
  - [ ] QRIS Static as Alternative for QRIS Invalid (*like on [SeaBank](https://www.seabank.co.id/)*)
 
 ## Payment Gateway Supported
