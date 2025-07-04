@@ -68,7 +68,8 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 *TODO...*
  - [ ] Trojan-Go
  - [ ] NoobzVPN
- - [ ] Hysteria
+ - [ ] Hysteria 1
+ - [ ] Hysteria 2
  - [ ] UDP Custom
  - [ ] Wireguard VPN
  - [ ] QRIS Static as Alternative for QRIS Invalid (*like on [SeaBank](https://www.seabank.co.id/)*)
