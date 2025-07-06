@@ -75,6 +75,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] [OkeConnect](https://www.okeconnect.com/auth/secure_login) / [OrderKuota](https://orderkuota.com/)
 
 *TODO...*
+ - [ ] [Saweria](https://saweria.co)
  - [ ] [Paypal](https://www.paypal.com/id/home)
  - [ ] [Midtrans](https://midtrans.com/id)
 
