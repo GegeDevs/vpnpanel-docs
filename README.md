@@ -73,9 +73,9 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  
  - [x] [Tripay](https://tripay.id/login)
  - [x] [OkeConnect](https://www.okeconnect.com/auth/secure_login) / [OrderKuota](https://orderkuota.com/)
+ - [x] [Saweria](https://saweria.co)
 
 *TODO...*
- - [ ] [Saweria](https://saweria.co)
  - [ ] [Paypal](https://www.paypal.com/id/home)
  - [ ] [Midtrans](https://midtrans.com/id)
 
