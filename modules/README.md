@@ -16,3 +16,5 @@ echo -e "Data Limit: <code>${limit_gb}</code> GB"
 echo -e "Link : <code>${link}</code>"
 echo -e "<b>+++++ End of Account Details +++++</b>"
 ```
+
+All `<`, `>` and `&` symbols that are not a part of a tag or an HTML entity must be replaced with the corresponding HTML entities (< with &lt;, > with &gt; and & with &amp;).
