@@ -77,6 +77,8 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 *TODO...*
  - [ ] [Paypal](https://www.paypal.com/id/home)
+ - [ ] [NOWPayments](https://account.nowpayments.io/sign-in)
+ - [ ] [Qiospay](https://qiospay.id/)
  - [ ] [Midtrans](https://midtrans.com/id)
 
 ## Tunnel Supported
