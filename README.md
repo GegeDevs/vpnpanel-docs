@@ -71,13 +71,13 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 ## Payment Gateway Supported
  
+ - [x] [NOWPayments](https://account.nowpayments.io/sign-in)
  - [x] [Tripay](https://tripay.id/login)
  - [x] [OkeConnect](https://www.okeconnect.com/auth/secure_login) / [OrderKuota](https://orderkuota.com/)
  - [x] [Saweria](https://saweria.co)
 
 *TODO...*
  - [ ] [Paypal](https://www.paypal.com/id/home)
- - [ ] [NOWPayments](https://account.nowpayments.io/sign-in)
  - [ ] [Qiospay](https://qiospay.id/)
  - [ ] [Midtrans](https://midtrans.com/id)
 
