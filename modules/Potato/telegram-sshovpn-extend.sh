@@ -14,7 +14,7 @@ api_output=$(curl --location --request PATCH "http://18.141.1.2/vps/renewsshvpn/
     "kuota": 0
     }')
 
-if [[ $(echo ${api_output} | jq -r '.meta.code') !== "200" ]]; then
+if [[ $(echo ${api_output} | jq -r '.meta.code') -ne 200 ]]; then
     echo -e "Failed"
     exit 1
 fi

@@ -24,7 +24,7 @@ api_output=$(curl --location 'http://127.0.0.1/vps/trojanall' \
     --header "Authorization: ${apiKey}" \
     --data "${json_payload}")
 
-if [[ $(echo ${api_output} | jq -r '.meta.code') !== "200" ]]; then
+if [[ $(echo ${api_output} | jq -r '.meta.code') -ne 200 ]]; then
     echo -e "Failed"
     exit 1
 fi

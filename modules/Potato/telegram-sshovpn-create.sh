@@ -18,7 +18,7 @@ api_output=$(curl --location 'http://127.0.0.1/vps/sshvpn' \
     "username": "${USERNAME}"
     }')
 
-if [[ $(echo ${api_output} | jq -r '.meta.code') !== "200" ]]; then
+if [[ $(echo ${api_output} | jq -r '.meta.code') -ne 200 ]]; then
     echo -e "Failed"
     exit 1
 fi
