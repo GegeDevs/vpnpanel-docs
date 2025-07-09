@@ -92,7 +92,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] [usmt-py](https://github.com/GegeDevs/vpnpanel-docs/tree/main/modules/usmt-py)
 
 *TODO...*
- - [ ] Make a request in the Issues Tab
+ - [ ] Make a request in the [Issues](https://github.com/GegeDevs/vpnpanel-docs/issues)
 
 
 ## Tunnel Supported
