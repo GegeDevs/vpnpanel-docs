@@ -83,6 +83,18 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [ ] [Qiospay](https://qiospay.id/)
  - [ ] [Midtrans](https://midtrans.com/id)
 
+## Script Supported
+ 
+ - [x] [Marzban-MarLing](https://github.com/GegeDevs/vpnpanel-docs/tree/main/modules/Marzban-MarLing)
+ - [x] [Potato](https://github.com/GegeDevs/vpnpanel-docs/tree/main/modules/Potato)
+ - [x] [SC_AryaBlitar](https://github.com/GegeDevs/vpnpanel-docs/tree/main/modules/SC_AryaBlitar)
+ - [x] [SC_Rerechan02](https://github.com/GegeDevs/vpnpanel-docs/tree/main/modules/SC_Rerechan02)
+ - [x] [usmt-py](https://github.com/GegeDevs/vpnpanel-docs/tree/main/modules/usmt-py)
+
+*TODO...*
+ - [ ] Make a request in the Issues Tab
+
+
 ## Tunnel Supported
 
 ### Duration Based
