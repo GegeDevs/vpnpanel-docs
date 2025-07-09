@@ -68,7 +68,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 *TODO...*
  - [ ] RESTful API
- - [ ] Auto Backup Bot Data
+ - [ ] Auto Backup Bot Data to Google Drive
  - [ ] QRIS Static as Alternative for QRIS Invalid (*like on [SeaBank](https://www.seabank.co.id/)*)
 
 ## Payment Gateway Supported
