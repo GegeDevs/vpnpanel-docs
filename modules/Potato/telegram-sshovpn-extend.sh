@@ -6,7 +6,7 @@ EXPIRED="$3"
 
 apiKey="YOUR_APIKEY"
 
-api_output=$(curl --location --request PATCH "http://18.141.1.2/vps/renewsshvpn/${USERNAME}/${EXPIRED}" \
+api_output=$(curl -sSkL --location --request PATCH "http://18.141.1.2/vps/renewsshvpn/${USERNAME}/${EXPIRED}" \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json' \
     --header "Authorization: ${apiKey}" \

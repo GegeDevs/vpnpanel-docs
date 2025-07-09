@@ -18,7 +18,7 @@ read -r -d '' json_payload <<EOF
 }
 EOF
 
-api_output=$(curl --location 'http://127.0.0.1/vps/vlessall' \
+api_output=$(curl -sSkL --location 'http://127.0.0.1/vps/vlessall' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json' \
     --header "Authorization: ${apiKey}" \

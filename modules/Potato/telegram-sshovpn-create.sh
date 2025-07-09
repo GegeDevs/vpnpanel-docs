@@ -7,7 +7,7 @@ EXPIRED="$3"
 apiKey="YOUR_APIKEY"
 limitip="YOUR_LIMITIP"
 
-api_output=$(curl --location 'http://127.0.0.1/vps/sshvpn' \
+api_output=$(curl -sSkL --location 'http://127.0.0.1/vps/sshvpn' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json' \
     --header "Authorization: ${apiKey}" \

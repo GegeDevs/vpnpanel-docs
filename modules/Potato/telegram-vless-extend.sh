@@ -12,7 +12,7 @@ read -r -d '' json_payload <<EOF
 }
 EOF
 
-api_output=$(curl --location --request PATCH "http://18.141.1.2/vps/renewvless/${USERNAME}/${EXPIRED}" \
+api_output=$(curl -sSkL --location --request PATCH "http://18.141.1.2/vps/renewvless/${USERNAME}/${EXPIRED}" \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json' \
     --header "Authorization: ${apiKey}" \
