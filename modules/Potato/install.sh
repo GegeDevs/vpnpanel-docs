@@ -10,11 +10,11 @@ if [[ "$EUID" -ne 0 ]]; then
 fi
 
 APIKEY="${1}"
-LIMITGB="${2}"
-LIMITIP="${3}"
+LIMITIP="${2}"
+LIMITGB="${3}"
 
-if [[ -z "${APIKEY}" || -z "${LIMITGB}" || -z "${LIMITIP}" ]]; then
-    echo "Usage: $0 <apikey> <limitgb> <limitip>"
+if [[ -z "${APIKEY}" || -z "${LIMITIP}" || -z "${LIMITGB}" ]]; then
+    echo "Usage: $0 <apikey> <limitip> <limitgb>"
     exit 1
 fi
 
