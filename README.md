@@ -38,6 +38,19 @@
 
 6. Test `/start` on your bot
 
+## Update Latest Version
+
+1. Go to Docker Compose directory
+	```bash
+	cd ./vpnpanel/config
+	```
+
+2. Enter this Command
+	```bash
+	sudo docker compose down --rmi all && \
+	sudo docker compose up -d
+	```
+
 ## Register VPS IP Address for Access [FREE]
 
 Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeVPS_AutoScript_bot). There is a plan for one day every day. You can use it to test the bot's connection to the server.
