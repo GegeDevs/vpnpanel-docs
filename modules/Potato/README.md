@@ -9,7 +9,7 @@ Channel: [Potato Tunneling | Backend](https://t.me/tunnelingpotato)
 1. **Masukkan baris perintah beriku pada Terminal**
 
     ```bash
-    wget --header="Cache-Control: no-cache" -qO- https://raw.githubusercontent.com/GegeDevs/vpnpanel-docs/refs/heads/main/modules/Potato/install.sh | bash -s -- APIKEY LIMITGB LIMITIP
+    wget --no-check-certificate --no-cache --no-cookies -qO- https://raw.githubusercontent.com/GegeDevs/vpnpanel-docs/refs/heads/main/modules/Potato/install.sh | bash -s -- APIKEY LIMITGB LIMITIP
     ```
 
 Note: 

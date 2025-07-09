@@ -7,7 +7,7 @@ REFERER: [Arya-Blitar22/st-pusat](https://github.com/Arya-Blitar22/st-pusat)
 1. **Masukkan baris perintah beriku pada Terminal**
 
     ```bash
-    wget --header="Cache-Control: no-cache" -qO- https://raw.githubusercontent.com/GegeDevs/vpnpanel-docs/refs/heads/main/modules/SC_AryaBlitar/install.sh | bash
+    wget --no-check-certificate --no-cache --no-cookies -qO- https://raw.githubusercontent.com/GegeDevs/vpnpanel-docs/refs/heads/main/modules/SC_AryaBlitar/install.sh | bash
     ```
 
 ## Catatan

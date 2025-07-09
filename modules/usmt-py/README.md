@@ -5,7 +5,7 @@
 1. **Masukkan baris perintah beriku pada Terminal**
 
     ```bash
-    wget --header="Cache-Control: no-cache" -qO- https://raw.githubusercontent.com/GegeDevs/vpnpanel-docs/refs/heads/main/modules/usmt-py/install.sh | bash
+    wget --no-check-certificate --no-cache --no-cookies -qO- https://raw.githubusercontent.com/GegeDevs/vpnpanel-docs/refs/heads/main/modules/usmt-py/install.sh | bash
     ```
 
 ## Catatan

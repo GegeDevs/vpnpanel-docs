@@ -9,7 +9,7 @@ REFERER CONFIG: [GawrAme/MarLing](https://raw.githubusercontent.com/GawrAme/MarL
 1. **Masukkan baris perintah beriku pada Terminal**
 
     ```bash
-    wget --header="Cache-Control: no-cache" -qO- https://raw.githubusercontent.com/GegeDevs/vpnpanel-docs/refs/heads/main/modules/Marzban-MarLing/install.sh | bash -s -- API_USERNAME API_PASSWORD API_PORT
+    wget --no-check-certificate --no-cache --no-cookies -qO- https://raw.githubusercontent.com/GegeDevs/vpnpanel-docs/refs/heads/main/modules/Marzban-MarLing/install.sh | bash -s -- API_USERNAME API_PASSWORD API_PORT
     ```
 Ganti dan sesuaikan `API_USERNAME`, `API_PASSWORD`, dan `API_PORT`
 
