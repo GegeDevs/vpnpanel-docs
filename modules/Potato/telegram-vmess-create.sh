@@ -8,17 +8,21 @@ apiKey="YOUR_APIKEY"
 limitgb="YOUR_LIMITGB"
 limitip="YOUR_LIMITIP"
 
+read -r -d '' json_payload <<EOF
+{
+  "expired": ${EXPIRED},
+  "limitip": ${limitip},
+  "kuota": ${limitgb},
+  "username": "${USERNAME}",
+  "uuidv2": "${PASSWORD}"
+}
+EOF
+
 api_output=$(curl --location 'http://127.0.0.1/vps/vmessall' \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json' \
     --header "Authorization: ${apiKey}" \
-    --data '{
-    "expired": '${EXPIRED}',
-    "limitip": '${limitip}',
-    "kuota": '${limitgb}',
-    "username": '"${USERNAME}"',
-    "uuidv2": '"${PASSWORD}"'
-}')
+    --data "${json_payload}")
 
 if [[ $(echo ${api_output} | jq -r '.meta.code') !== "200" ]]; then
     echo -e "Failed"
@@ -26,7 +30,7 @@ if [[ $(echo ${api_output} | jq -r '.meta.code') !== "200" ]]; then
 fi
 
 fix_username="$(echo -e ${api_output} | jq -r '.data.username')"
-fix_password="$(echo -e ${api_output} | jq -r '.data.uuidv2')"
+fix_password="$(echo -e ${api_output} | jq -r '.data.uuid')"
 fix_expired="$(echo -e ${api_output} | jq -r '.data.expired')"
 fix_time="$(echo -e ${api_output} | jq -r '.data.time')"
 fix_isp="$(echo -e ${api_output} | jq -r '.meta.ISP')"

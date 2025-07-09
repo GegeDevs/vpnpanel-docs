@@ -6,13 +6,17 @@ EXPIRED="$3"
 
 apiKey="YOUR_APIKEY"
 
+read -r -d '' json_payload <<EOF
+{
+  "kuota": 0
+}
+EOF
+
 api_output=$(curl --location --request PATCH "http://18.141.1.2/vps/renewvmess/${USERNAME}/${EXPIRED}" \
     --header 'Accept: application/json' \
     --header 'Content-Type: application/json' \
     --header "Authorization: ${apiKey}" \
-    --data '{
-    "kuota": 0
-    }')
+    --data "${json_payload}")
 
 if [[ $(echo ${api_output} | jq -r '.meta.code') !== "200" ]]; then
     echo -e "Failed"
