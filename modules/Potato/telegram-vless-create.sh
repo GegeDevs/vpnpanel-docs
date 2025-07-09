@@ -51,7 +51,7 @@ fix_link_uptls="$(echo -e ${api_output} | jq -r '.data.link.uptls')"
 fix_link_upntls="$(echo -e ${api_output} | jq -r '.data.link.upntls')"
 
 echo -e "HTML_CODE"
-echo -e "<b>+++++ SSH Account Created +++++</b>"
+echo -e "<b>+++++ VLESS Account Created +++++</b>"
 echo -e "ISP: <code>${fix_isp}</code>"
 echo -e "City: <code>${fix_city}</code>"
 echo -e "Hostname: <code>${fix_hostname}</code>"
