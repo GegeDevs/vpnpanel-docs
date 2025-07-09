@@ -43,11 +43,10 @@ function actions_list(){
     echo "
         create
         extend
-        delete
     " | sed 's/^[ \t]*//g;/^$/d'
 }
 
-apt-get install -qq -y expect wget
+apt-get install -qq -y expect wget jq
 tunnels_list | while read -r tunnel; do
     if [[ ! -d "${bin_dir}" ]]; then
         mkdir -p "${bin_dir}"
