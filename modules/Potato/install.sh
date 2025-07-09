@@ -26,7 +26,7 @@ function link_gen(){
 function install_sh(){
     full_link="$(link_gen ${1} ${2})"
     file_name="$(echo "${full_link}" | rev | cut -d'/' -f 1 | rev)"
-    wget -qO- "${full_link}" | sed 's/YOUR_APIKEY/'"${APIKEY}"'/g' > "${bin_dir}/${file_name}"
+    wget -qO- "${full_link}" | sed 's/YOUR_APIKEY/'"${APIKEY}"'/g; s/YOUR_LIMITGB/'"${LIMITGB}"'/g; s/YOUR_LIMITIP/'"${LIMITIP}"'/g' > "${bin_dir}/${file_name}"
     chmod +x "${bin_dir}/${file_name}"
 }
 

@@ -5,7 +5,7 @@ PASSWORD="$2"
 EXPIRED="$3"
 
 apiKey="YOUR_APIKEY"
-limitip=3
+limitip="YOUR_LIMITIP"
 
 api_output=$(curl --location 'http://127.0.0.1/vps/sshvpn' \
     --header 'Accept: application/json' \

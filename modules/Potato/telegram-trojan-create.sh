@@ -5,8 +5,8 @@ PASSWORD="$2"
 EXPIRED="$3"
 
 apiKey="YOUR_APIKEY"
-limitgb=250
-limitip=3
+limitgb="YOUR_LIMITGB"
+limitip="YOUR_LIMITIP"
 
 api_output=$(curl --location 'http://127.0.0.1/vps/trojanall' \
     --header 'Accept: application/json' \
