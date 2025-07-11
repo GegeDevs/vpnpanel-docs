@@ -80,8 +80,11 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] Maintenance Mode Toggler
 
 *TODO...*
- - [ ] RESTful API
+ - [ ] RESTful API Access
  - [ ] Auto Backup Bot Data to Google Drive
+ - [ ] Whitelabel Changer Interface
+ - [ ] Channels List Interface Editor
+ - [ ] Tunnel Transport Enabler/Disabler
  - [ ] QRIS Static as Alternative for QRIS Invalid (*like on [SeaBank](https://www.seabank.co.id/)*)
 
 ## Payment Gateway Supported
@@ -95,6 +98,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [ ] [Paypal](https://www.paypal.com/id/home)
  - [ ] [Qiospay](https://qiospay.id/)
  - [ ] [Midtrans](https://midtrans.com/id)
+ - [ ] [VioletMediaPay](https://violetmediapay.com/)
 
 ## Script Supported
  
