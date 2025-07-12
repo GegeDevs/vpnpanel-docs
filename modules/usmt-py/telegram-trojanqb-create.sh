@@ -8,7 +8,7 @@ CYCLE="$5"
 
 tunnel_code="trojan"
 tunnel_name=$(echo "$tunnel_code" | tr '[:lower:]' '[:upper:]')
-tunnel_mode="ws"
+tunnel_mode=$(echo "$6" | cut -d '-' -f 2) # ws, upgrade, or grpc
 
 created="$(usmt.py user add ${USERNAME} --protocol ${tunnel_code}-${tunnel_mode} --days ${EXPIRED} --limit-gb ${QUOTA} --subscription ${CYCLE})"
 syncpass="$(usmt.py user modify ${USERNAME} --protocol ${tunnel_code}-${tunnel_mode} --new-secret ${PASSWORD})"
@@ -25,9 +25,10 @@ json_transform=$(jq -n \
   --arg transport "$(grep -oP 'Transport\s+:\s+\K.*' <<< "$created")" \
   --arg host "$(grep -oP 'Host \(SNI\)\s+:\s+\K.*' <<< "$created")" \
   --arg path "$(grep -oP 'Path\s+:\s+\K.*' <<< "$created")" \
+  --arg serviceName "$(grep -oP 'ServiceName\s+:\s+\K.*' <<< "$created")" \
   --arg wildcard_path "$(grep -oP 'Wildcard URI Path\s+:\s+\K.*' <<< "$created")" \
-  --arg ${tunnel_code}_tls "$(grep -A1 'HTTPS/TLS Based' <<< "$created" | tail -n1)" \
-  --arg ${tunnel_code}_nontls "$(grep -A1 'HTTP/Non-TLS Based' <<< "$created" | tail -n1)" \
+  --arg tls_url "$(grep -A1 'HTTPS/TLS Based' <<< "$created" | tail -n1)" \
+  --arg nontls_url "$(grep -A1 'HTTP/Non-TLS Based' <<< "$created" | tail -n1)" \
   --arg status_url "$(grep -oP 'Check Status Account\s+:\s+\K.*' <<< "$created")" \
   --arg contact "$(grep -oP 'Contact:\s+\K.*' <<< "$created")" \
   --arg group "$(grep -oP 'VVIP Group:\s+\K.*' <<< "$created")" \
@@ -46,16 +47,17 @@ json_transform=$(jq -n \
       transport: $transport,
       host_sni: $host,
       path: $path,
+      serviceName: $serviceName,
       wildcard_uri_path: $wildcard_path
     },
     '"${tunnel_code}"': {
       tls: {
-        url: $'"${tunnel_code}"'_tls,
+        url: $tls_url,
         port: 443,
         security: "tls"
       },
       non_tls: {
-        url: $'"${tunnel_code}"'_nontls,
+        url: $nontls_url,
         port: 80,
         security: "none"
       }
@@ -80,13 +82,10 @@ usmt_ip_address="$(echo "$json_transform" | jq -r '.server.ip_address')"
 usmt_transport="$(echo "$json_transform" | jq -r '.server.transport')"
 usmt_host_sni="$(echo "$json_transform" | jq -r '.server.host_sni')"
 usmt_path="$(echo "$json_transform" | jq -r '.server.path')"
+usmt_serviceName="$(echo "$json_transform" | jq -r '.server.serviceName')"
 usmt_wildcard_uri_path="$(echo "$json_transform" | jq -r '.server.wildcard_uri_path')"
 usmt_tls_url="$(echo "$json_transform" | jq -r '.'"${tunnel_code}"'.tls.url')"
-usmt_tls_port="$(echo "$json_transform" | jq -r '.'"${tunnel_code}"'.tls.port')"
-usmt_tls_security="$(echo "$json_transform" | jq -r '.'"${tunnel_code}"'.tls.security')"
 usmt_nontls_url="$(echo "$json_transform" | jq -r '.'"${tunnel_code}"'.non_tls.url')"
-usmt_nontls_port="$(echo "$json_transform" | jq -r '.'"${tunnel_code}"'.non_tls.port')"
-usmt_nontls_security="$(echo "$json_transform" | jq -r '.'"${tunnel_code}"'.non_tls.security')"
 usmt_check_status_url="$(echo "$json_transform" | jq -r '.additional.check_status_url')"
 usmt_extend_notice="$(echo "$json_transform" | jq -r '.additional.extend_notice')"
 usmt_contact="$(echo "$json_transform" | jq -r '.additional.contact')"
@@ -104,15 +103,27 @@ echo -e "Password: <code>${usmt_uuid}</code>"
 echo -e "Expired: <code>${usmt_expired}</code>"
 echo -e "Data Limit: <code>${usmt_traffic_limit_gb}</code> GB"
 echo -e "Quota Cycle: <code>${usmt_subscription}</code>"
-echo -e "Websocket : <code>${usmt_tls_url}</code>"
-echo -e "Path: <code>${usmt_path}</code>"
-echo -e "Wildcard URI Path: <code>${usmt_wildcard_uri_path}</code>"
-echo -e "TLS URL: <code>${usmt_tls_url}</code>"
-echo -e "TLS Port: <code>${usmt_tls_port}</code>"
-echo -e "TLS Security: <code>${usmt_tls_security}</code>"
-echo -e "Non-TLS URL: <code>${usmt_nontls_url}</code>"
-echo -e "Non-TLS Port: <code>${usmt_nontls_port}</code>"
-echo -e "Non-TLS Security: <code>${usmt_nontls_security}</code>"
+
+case $tunnel_mode in
+  "ws")
+    echo -e "Path: <code>${usmt_path}</code>"
+    echo -e "Wildcard URI Path: <code>${usmt_wildcard_uri_path}</code>"
+    echo -e "TLS URL: <code>${usmt_tls_url}</code>"
+    echo -e "Non-TLS URL: <code>${usmt_nontls_url}</code>"
+    ;;
+  "upgrade")
+    echo -e "Path: <code>${usmt_path}</code>"
+    echo -e "Wildcard URI Path: <code>${usmt_wildcard_uri_path}</code>"
+    echo -e "TLS URL: <code>${usmt_tls_url}</code>"
+    echo -e "Non-TLS URL: <code>${usmt_nontls_url}</code>"
+    ;;
+  "grpc")
+    echo -e "ServiceName: <code>${usmt_serviceName}</code>"
+    echo -e "TLS URL: <code>${usmt_tls_url}</code>"
+    ;;
+esac
+
+
 echo -e "Check Status Account: <code>${usmt_check_status_url}</code>"
 echo -e "Extend Notice: <code>${usmt_extend_notice}</code>"
 echo -e "Contact: <code>${usmt_contact}</code>"
