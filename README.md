@@ -58,6 +58,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 ## Features
 
  - [x] Admin Panel Dashboard for Centralize Configuration
+ - [x] Auto Backup Bot Data to Google Drive
  - [x] Pluginable for Supporting many VPN Server Script
  - [x] Broadcast Message to All Client
  - [x] Notes for each Tunnel Menu
@@ -81,7 +82,6 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 *TODO...*
  - [ ] RESTful API Access
- - [ ] Auto Backup Bot Data to Google Drive
  - [ ] Whitelabel Changer Interface
  - [ ] Channels List Interface Editor
  - [ ] Tunnel Transport Enabler/Disabler
@@ -155,6 +155,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 | VLess Quota-Based | `vlessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | Trojan Quota-Based | `trojanqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | NoobzVPN | `noobz` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| Hysteria 2 Quota-Based | `hysteria2qb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 
 *Command Format*
 ```bash
