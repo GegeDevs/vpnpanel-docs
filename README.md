@@ -1,4 +1,5 @@
 # VPN Telegram Panel - Documentation
+
 <p align="center">
 	<a href="https://t.me/gegevps_tunnel_bot"><b>LIVE PREVIEW DEMO</b></a>
 </p>
@@ -21,15 +22,15 @@
 	```bash
 	git clone https://github.com/GegeDevs/vpnpanel-docs.git ./vpnpanel
 	```
-3. Use one of these two options
+3. Change to the config directory
 	```bash
 	cd ./vpnpanel/config
 	```
 4. Edit `config.yaml`
 	| TAG | Instruction |
 	|--|--|
-	| `<BOT_TOKEN>` | replace with yout bot token from [botFather](https://t.me/BotFather) |
-	| `<BOTNOTIF_TOKEN>` | replace with yout bot token from [botFather](https://t.me/BotFather) |
+	| `<BOT_TOKEN>` | replace with your bot token from [botFather](https://t.me/BotFather) |
+	| `<BOTNOTIF_TOKEN>` | replace with your bot token from [botFather](https://t.me/BotFather) |
 
 5. Start Docker Compose
 	```bash
@@ -66,6 +67,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] Hashtag Notes
  - [x] Supports Multiple tunnel types
  - [x] Tunnel Duration/Quota Based Plan
+ - [x] Tunnel Transport Enabler/Disabler
  - [x] Add, Reduce, Check Balance Client
  - [x] Add, Delete, and List Server
  - [x] Add, Delete, Edit Tunnel Plan
@@ -84,7 +86,6 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [ ] RESTful API Access
  - [ ] Whitelabel Changer Interface
  - [ ] Channels List Interface Editor
- - [ ] Tunnel Transport Enabler/Disabler
  - [ ] QRIS Static as Alternative for QRIS Invalid (*like on [SeaBank](https://www.seabank.co.id/)*)
 
 ## Payment Gateway Supported
