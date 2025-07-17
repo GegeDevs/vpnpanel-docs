@@ -26,6 +26,7 @@ function tunnels_list(){
         vmessqb
         vlessqb
         trojanqb
+        hysteria2
     " | sed 's/^[ \t]*//g;/^$/d'
 }
 
