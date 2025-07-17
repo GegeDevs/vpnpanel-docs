@@ -5,10 +5,11 @@ PASSWORD="$2"
 EXPIRED="$3"
 QUOTA="$4"
 CYCLE="$5"
+TRANSPORT="$6"
 
 tunnel_code="vmess"
 tunnel_name=$(echo "$tunnel_code" | tr '[:lower:]' '[:upper:]')
-tunnel_mode=$(echo "$6" | cut -d '-' -f 2) # ws, upgrade, or grpc
+tunnel_mode=${TRANSPORT}
 
 created="$(usmt.py user add ${USERNAME} --protocol ${tunnel_code}-${tunnel_mode} --days ${EXPIRED} --limit-gb ${QUOTA} --subscription ${CYCLE})"
 syncpass="$(usmt.py user modify ${USERNAME} --protocol ${tunnel_code}-${tunnel_mode} --new-secret ${PASSWORD})"
