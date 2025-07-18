@@ -191,6 +191,8 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 > *Locally : *No connection to server required*<br>**Remotely : *Requires connection to server*
 
+### Transport
+
 | Transport | Details |
 |--|--|
 `tcp` | 🎯 TCP |
