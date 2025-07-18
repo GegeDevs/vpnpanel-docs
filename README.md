@@ -15,6 +15,10 @@
   <img src="./images/TunnelSupported.png" height="300"/>
 </p>
 
+## Register VPS IP Address for Access [FREE]
+
+Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeVPS_AutoScript_bot). There is a plan for one day every day. You can use it to test the bot's connection to the server.
+
 ## Installation
 
 1. Install Docker Container on your server. [Follow the tutorial here](https://docs.docker.com/engine/install/)
@@ -51,10 +55,6 @@
 	sudo docker compose down --rmi all && \
 	sudo docker compose up -d
 	```
-
-## Register VPS IP Address for Access [FREE]
-
-Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeVPS_AutoScript_bot). There is a plan for one day every day. You can use it to test the bot's connection to the server.
 
 ## Features
 
