@@ -92,7 +92,6 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  
  - [x] [NOWPayments](https://account.nowpayments.io/sign-in)
  - [x] [Tripay](https://tripay.id/login)
- - [x] [VioletMediaPay](https://violetmediapay.com/)
  - [x] [OkeConnect](https://www.okeconnect.com/auth/secure_login) / [OrderKuota](https://orderkuota.com/)
  - [x] [Saweria](https://saweria.co)
 
@@ -100,6 +99,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [ ] [Paypal](https://www.paypal.com/id/home)
  - [ ] [Qiospay](https://qiospay.id/)
  - [ ] [Midtrans](https://midtrans.com/id)
+ - [ ] [VioletMediaPay](https://violetmediapay.com/)
 
 ## Script Supported
  
@@ -187,3 +187,31 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 **`unlock` | Unlock tunnel account
 
 > *Locally : *No connection to server required*<br>**Remotely : *Requires connection to server*
+
+# Debugging
+
+### Restore Backup File
+
+```log
+root@serverbot:~/vpnpanel/config# docker compose up -d && docker compose logs -f
+Attaching to api-1, bot-1, nginx-1
+nginx-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+api-1    | telegram-bot-api --http-port 8081 --dir=/var/lib/telegram-bot-api --temp-dir=/tmp/telegram-bot-api --username=telegram-bot-api --groupname=telegram-bot-api --api-id=191xxx --api-hash=1586c21e3d9d8exxxxx 
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: can not modify /etc/nginx/conf.d/default.conf (read-only file system?)
+nginx-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+api-1    | [ 0][t 9][1752819429.874213457][Status.h:256][!ClientManager]        Unexpected Status [PosixError : Permission denied : 13 : File "/var/lib/telegram-bot-api/tqueue.binlog" can't be opened/created for reading and writing] in file /root/tdlib/telegram-bot-api/ClientManager.cpp at line 326
+api-1    | [pid 1] [time 1752819429] ------- Log dump -------
+..........
+```
+
+This is caused by a file permission issue. You can resolve it with the following command:
+
+```bash
+chmod -R 777 ./data # Grant more permissive access to data files
+docker compose down && docker compose up -d
+```
