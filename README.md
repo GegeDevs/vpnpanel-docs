@@ -93,6 +93,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  
  - [x] [NOWPayments](https://account.nowpayments.io/sign-in)
  - [x] [Tripay](https://tripay.id/login)
+ - [x] [VioletMediaPay](https://violetmediapay.com/)
  - [x] [OkeConnect](https://www.okeconnect.com/auth/secure_login) / [OrderKuota](https://orderkuota.com/)
  - [x] [Saweria](https://saweria.co)
 
@@ -100,7 +101,6 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [ ] [Paypal](https://www.paypal.com/id/home)
  - [ ] [Qiospay](https://qiospay.id/)
  - [ ] [Midtrans](https://midtrans.com/id)
- - [ ] [VioletMediaPay](https://violetmediapay.com/)
 
 ## Script Supported
  
