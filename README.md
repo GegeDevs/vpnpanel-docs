@@ -119,18 +119,18 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 | Tunnel | Code | Action Locally | Action Remotely |
 |--|--|--|--|
-| SSH/OpenVPN | `sshovpn` | `info` | `create`, `extend`,<br/>  `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| SoftetherVPN | `sevpn` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| WireGuard | `wireguard` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| VMess | `vmess` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| VLess | `vless` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| Trojan | `trojan` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| Shadowsocks | `ssocks` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| Trojan-Go | `trojango` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| Socks5 | `socks5` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| Hysteria1 | `hysteria1` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| Hysteria2 | `hysteria2` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| UDP Custom | `udpcustom` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🐡 SSH/OpenVPN | `sshovpn` | `info` | `create`, `extend`,<br/>  `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🛰️ SoftetherVPN | `sevpn` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🐉 WireGuard | `wireguard` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🦈 VMess | `vmess` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🐬 VLess | `vless` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🐎 Trojan | `trojan` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🥷🏿 Shadowsocks | `ssocks` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🦄 Trojan-Go | `trojango` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🛡️ Socks5 | `socks5` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🪽 Hysteria1 | `hysteria1` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| ⚡️ Hysteria2 | `hysteria2` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🎨 UDP Custom | `udpcustom` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 
 *Command Format*
 ```bash
@@ -141,22 +141,23 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 ```bash
 # VMess Create Account
-/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30
+/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30 ws
 
 # Username: gegeuser
 # Password: gegepass
 # Days: 30
+# Transport: ws
 ```
 
 ### Quota Based
 
 | Tunnel | Code | Action Locally | Action Remotely |
 |--|--|--|--|
-| VMess Quota-Based | `vmessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| VLess Quota-Based | `vlessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| Trojan Quota-Based | `trojanqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| NoobzVPN | `noobz` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| Hysteria 2 Quota-Based | `hysteria2qb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🦈 VMess Quota-Based | `vmessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🐬 VLess Quota-Based | `vlessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🐎 Trojan Quota-Based | `trojanqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🧪 NoobzVPN | `noobz` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| ⚡️ Hysteria 2 Quota-Based | `hysteria2qb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 
 *Command Format*
 ```bash
@@ -167,13 +168,14 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 ```bash
 # VMess Create Account
-/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30 25 daily
+/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30 25 daily ws
 
 # Username: gegeuser
 # Password: gegepass
 # Days: 30
 # Quota: 25 GB
 # Cycle: daily
+# Transport: ws
 ```
 
 | Action | Details |
@@ -187,6 +189,14 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 **`unlock` | Unlock tunnel account
 
 > *Locally : *No connection to server required*<br>**Remotely : *Requires connection to server*
+
+| Transport | Details |
+|--|--|
+`tcp` | 🎯 TCP |
+`ws` | 🌐 WebSocket |
+`grpc` | 🧬 gRPC |
+`xhttp` | 💨 XHTTP |
+`httpupgrade` | 🆙 HTTPUpgrade |
 
 # Debugging
 
