@@ -205,7 +205,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 ### OrderKuota Payment Gateway
 
-The original API Endpoint URL from OrderKuota only allows connections from Indonesian IP addresses. However, this bot has been configured with an Indonesian IP Reverse Proxy, so it can still be used even if the bot is running on a server with an international IP. Still, if you intend to use OrderKuota Payment Gateway as the main payment method, it is recommended to host the bot server with an Indonesian IP. The Reverse Proxy embedded in the bot application is hosted on the developer's personal (home) server, so there is no guaranteed SLA uptime due to various factors such as power outages and others. Thank you.
+The original API Endpoint URL from OrderKuota **only allows connections from Indonesian IP addresses**. _However, this bot has been configured with an Indonesian IP Reverse Proxy, so it can still be used even if the bot is running on a server with an international IP._ Still, if you intend to use OrderKuota Payment Gateway as the main payment method, it is **recommended to host the bot server with an Indonesian IP**. **The Reverse Proxy embedded in the bot application** is hosted on the developer's personal (home) server, so there is **no guaranteed SLA uptime** due to various factors such as power outages and others. Thank you.
 
 ### Restore Backup File
 
