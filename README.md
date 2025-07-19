@@ -62,6 +62,8 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] Auto Backup Bot Data to Google Drive
  - [x] Pluginable for Supporting many VPN Server Script
  - [x] Broadcast Message to All Client
+ - [x] Whitelabel Changer Interface
+ - [x] Channels List Interface Editor
  - [x] Notes for each Tunnel Menu
  - [x] Editable Start Notes
  - [x] Hashtag Notes
@@ -85,8 +87,6 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 *TODO...*
  - [ ] RESTful API Access
  - [ ] Trial Button
- - [ ] Whitelabel Changer Interface
- - [ ] Channels List Interface Editor
  - [ ] QRIS Static as Alternative for QRIS Invalid (*like on [SeaBank](https://www.seabank.co.id/)*)
 
 ## Payment Gateway Supported
