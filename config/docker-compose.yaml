@@ -18,13 +18,14 @@ services:
     volumes:
       - ./data/api:/var/lib/telegram-bot-api:ro
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-
+      
   bot:
     image: gegedesembri/vpnpanel:latest
     restart: always
     environment:
       - TZ=Asia/Jakarta
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
       - /etc/localtime:/etc/localtime:ro
       - ./data:/app/data
       - ./config.yaml:/app/config.yaml

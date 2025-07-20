@@ -64,6 +64,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] Broadcast Message to All Client
  - [x] Whitelabel Changer Interface
  - [x] Channels List Interface Editor
+ - [x] Check Version Update
  - [x] Notes for each Tunnel Menu
  - [x] Editable Start Notes
  - [x] Hashtag Notes
