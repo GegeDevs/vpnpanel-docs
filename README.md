@@ -30,13 +30,19 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 	```bash
 	cd ./vpnpanel/config
 	```
-4. Edit `config.yaml`
+4. Edit `docker-compose.yaml`
 	| TAG | Instruction |
 	|--|--|
-	| `<BOT_TOKEN>` | replace with your bot token from [botFather](https://t.me/BotFather) |
-	| `<BOTNOTIF_TOKEN>` | replace with your bot token from [botFather](https://t.me/BotFather) |
+	| `YOUR_TELEGRAM_API_ID` | replace with your bot token from [Bot API Auth](https://my.telegram.org/apps) |
+	| `YOUR_TELEGRAM_API_HASH` | replace with your bot token from [Bot API Auth](https://my.telegram.org/apps) |
+	```
+5. Edit `config.yaml`
+	| TAG | Instruction |
+	|--|--|
+	| `BOT_TOKEN` | replace with your bot token from [botFather](https://t.me/BotFather) |
+	| `BOTNOTIF_TOKEN` | replace with your bot token from [botFather](https://t.me/BotFather) |
 
-5. Start Docker Compose
+6. Start Docker Compose
 	```bash
 	sudo docker compose up -d
 	```

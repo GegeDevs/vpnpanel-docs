@@ -3,18 +3,18 @@ log:
   dir: ./data/log # Directory to store log files
 
 telegram:
-  admin_ids: # Daftar Master Admin dengan akses penuh untuk mengelola bot dan co-admin
+  # channels dan whitelabel yang sudah tidak digunakan (deprecated)
+  # Pindah ke pengaturan khusus di dalam masing-masing bot
+  admin_ids:
     - 124324324 # Ganti dengan ID Telegram Anda
-    - 124123214 # Bisa lebih dari satu ID
-    - 123456789 # Contoh ID admin lainnya
   bot:
-    token: <BOT_TOKEN> # Ganti dengan token bot Telegram Anda
+    token: BOT_TOKEN
     api:
       protocol: http
       host: nginx
       port: 80
   botnotif:
-    token: <BOTNOTIF_TOKEN> # Ganti dengan token bot notifikasi Telegram Anda
+    token: BOTNOTIF_TOKEN
     api:
       protocol: http
       host: nginx
