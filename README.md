@@ -94,7 +94,6 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 *TODO...*
  - [ ] RESTful API Access
  - [ ] Trial Button
- - [ ] QRIS Static as Alternative for QRIS Invalid (*like on [SeaBank](https://www.seabank.co.id/)*)
 
 ## Payment Gateway Supported
  
