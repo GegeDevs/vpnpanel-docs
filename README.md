@@ -74,6 +74,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
  - [x] Notes for each Tunnel Menu
  - [x] Editable Start Notes
  - [x] Hashtag Notes
+ - [x] Trial Accounts
  - [x] Supports Multiple tunnel types
  - [x] Tunnel Duration/Quota Based Plan
  - [x] Tunnel Transport Enabler/Disabler
@@ -93,7 +94,6 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 *TODO...*
  - [ ] RESTful API Access
- - [ ] Trial Button
 
 ## Payment Gateway Supported
  
@@ -126,56 +126,57 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 
 | Tunnel | Code | Action Locally | Action Remotely |
 |--|--|--|--|
-| 🐡 SSH/OpenVPN | `sshovpn` | `info` | `create`, `extend`,<br/>  `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| 🛰️ SoftetherVPN | `sevpn` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| 🐉 WireGuard | `wireguard` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| 🦈 VMess | `vmess` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| 🐬 VLess | `vless` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| 🐎 Trojan | `trojan` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| 🥷🏿 Shadowsocks | `ssocks` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🐡 SSH/OpenVPN | `sshovpn` | `info` | `create`, `extend`,<br/>  `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| 🛰️ SoftetherVPN | `sevpn` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| 🐉 WireGuard | `wireguard` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| 🦈 VMess | `vmess` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| 🐬 VLess | `vless` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| 🐎 Trojan | `trojan` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| 🥷🏿 Shadowsocks | `ssocks` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
 | 🦄 Trojan-Go | `trojango` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | 🛡️ Socks5 | `socks5` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| 🪽 Hysteria1 | `hysteria1` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| ⚡️ Hysteria2 | `hysteria2` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| 🎨 UDP Custom | `udpcustom` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🪽 Hysteria1 | `hysteria1` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| ⚡️ Hysteria2 | `hysteria2` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| 🎨 UDP Custom | `udpcustom` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
 
 *Command Format*
 ```bash
-/etc/gegevps/bin/telegram-<CODE>-<ACTION>.sh <USERNAME> <PASSWORD> <DAYS>
+/etc/gegevps/bin/telegram-<CODE>-<ACTION>.sh <USERNAME> <PASSWORD> <DAYS> <TRANSPORT> <EXPIRED_TIMESTAMP>
 ```
 
 *example*: 
 
 ```bash
 # VMess Create Account
-/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30 ws
+/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30 ws 1756107420
 
 # Username: gegeuser
 # Password: gegepass
 # Days: 30
 # Transport: ws
+# Expired Timestamp: 1756107420 (Mon Aug 25 02:37:00 PM WIB 2025)
 ```
 
 ### Quota Based
 
 | Tunnel | Code | Action Locally | Action Remotely |
 |--|--|--|--|
-| 🦈 VMess Quota-Based | `vmessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| 🐬 VLess Quota-Based | `vlessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| 🐎 Trojan Quota-Based | `trojanqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🦈 VMess Quota-Based | `vmessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| 🐬 VLess Quota-Based | `vlessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| 🐎 Trojan Quota-Based | `trojanqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
 | 🧪 NoobzVPN | `noobz` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
-| ⚡️ Hysteria 2 Quota-Based | `hysteria2qb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| ⚡️ Hysteria 2 Quota-Based | `hysteria2qb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
 
 *Command Format*
 ```bash
-/etc/gegevps/bin/telegram-<CODE>-<ACTION>.sh <USERNAME> <PASSWORD> <DAYS> <QUOTA> <CYCLE [daily|weekly|montly]>
+/etc/gegevps/bin/telegram-<CODE>-<ACTION>.sh <USERNAME> <PASSWORD> <DAYS> <QUOTA> <CYCLE [daily|weekly|montly]> <TRANSPORT> <EXPIRED_TIMESTAMP>
 ```
 
 *example*: 
 
 ```bash
 # VMess Create Account
-/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30 25 daily ws
+/etc/gegevps/bin/telegram-vmess-create.sh gegeuser gegepass 30 25 daily ws 1756107420
 
 # Username: gegeuser
 # Password: gegepass
@@ -183,6 +184,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 # Quota: 25 GB
 # Cycle: daily
 # Transport: ws
+# Expired Timestamp: 1756107420 (Mon Aug 25 02:37:00 PM WIB 2025)
 ```
 
 | Action | Details |
@@ -194,6 +196,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 **`checklogin` | Check user login on server
 **`lock` | Lock tunnel account
 **`unlock` | Unlock tunnel account
+**`trial` | Used to create tunnel trial accounts
 
 > *Locally : *No connection to server required*<br>**Remotely : *Requires connection to server*
 
