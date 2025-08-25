@@ -5,6 +5,7 @@ username="$1"
 password="$2"
 expires="$3"
 transport="${4:-all}"
+expired_timestamp_bot="$5"
 USERNAME="${username//[^[:alnum:]]/}"
 PASSWORD="${password}"
 

@@ -4,6 +4,7 @@ username="$1"
 password="$2"
 days="$3"
 transport="$4"
+expired_timestamp_bot="$5"
 
 function ListUsers(){
     cat /etc/gegevps/hysteria/userdata

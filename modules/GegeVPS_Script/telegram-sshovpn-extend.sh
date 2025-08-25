@@ -5,6 +5,7 @@ username="$1"
 password="$2"
 days="$3"
 transport="${4:-all}"
+expired_timestamp_bot="$5"
 
 if [[ "$(cat /etc/passwd | grep -w -c ${username})" == 0 ]]; then
     echo -e "HTML_CODE"

@@ -7,6 +7,7 @@ username="$1"
 password="$2"
 days="$3"
 transport="$4"
+expired_timestamp_bot="$5"
 
 function sevpn_ListUsers(){
     ${vpncmd_execute} UserList | grep -w 'User Name\|Group Name\|Expiration Date' | sed -z 's/\nExpiration Date/ | Expiration Date/g' | sed -z 's/\nGroup Name/ | Group Name/g' | cut -d '|' -f 2,4,6 | sed '/private/d' | sed 's/ |selling |/ /g' | sed '/trial_/d' |cut -d ' ' -f 1,2 | sed 's/\<No\>/Lifetime/g'

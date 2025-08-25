@@ -6,6 +6,7 @@ username="$1"
 password="$2"
 days="$3"
 transport="${4:-all}"
+expired_timestamp_bot="$5"
 
 root_vpnray="/etc/gegevps/vpnray"
 name_vpnray="VLess"
