@@ -2,7 +2,7 @@
 
 USERNAME="${1}"
 PASSWORD="${2}"
-EXPIRED="${3}"
+EXPIRED="${3}" # days
 TRANSPORT="${4}"
 EXPIRED_TIMESTAMP_BOT="${5}"
 

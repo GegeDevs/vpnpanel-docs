@@ -2,18 +2,32 @@
 
 USERNAME="${1}"
 PASSWORD="${2}"
-EXPIRED="${3}" # hours
+EXPIRED="${3}" # days
 QUOTA="${4}"
 CYCLE="${5}"
 TRANSPORT="${6}"
 EXPIRED_TIMESTAMP_BOT="${7}"
 
+round() {
+  local num=$1
+  local scale=${2:-0} # default 0 digit desimal
+  local factor=$(echo "10 ^ $scale" | bc)
+
+  echo "define round(x){
+           if (x < 0) return (x - 0.5)/1;
+           return (x + 0.5)/1
+        }
+        scale=$scale;
+        round($num * $factor)/$factor" | bc
+}
+
+EXPIRED_HOURS=$(round "24 * ${EXPIRED}" 0)
+
 tunnel_name="VMESS"
 tunnel_type="VMESS"
 limit_gb="200"
 limit_bytes=$((limit_gb * 1024 * 1024 * 1024))
-# expired_timestamp=$(date -d "+${EXPIRED} days" +%s)
-expired_timestamp="${EXPIRED_TIMESTAMP_BOT}"
+expired_timestamp=$(date -d "+${EXPIRED_HOURS} hours" +%s)
 
 api_host="127.0.0.1"
 api_port="YOUR_API_PORT"
