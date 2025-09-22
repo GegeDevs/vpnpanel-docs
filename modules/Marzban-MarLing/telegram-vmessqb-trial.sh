@@ -2,7 +2,7 @@
 
 USERNAME="${1}"
 PASSWORD="${2}"
-EXPIRED="${3}"
+EXPIRED="${3}" # hours
 QUOTA="${4}"
 CYCLE="${5}"
 TRANSPORT="${6}"
