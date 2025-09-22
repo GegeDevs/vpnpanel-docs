@@ -3,8 +3,10 @@
 USERNAME="${1}"
 PASSWORD="${2}"
 EXPIRED="${3}"
-TRANSPORT="${4}"
-EXPIRED_TIMESTAMP_BOT="${5}"
+QUOTA="${4}"
+CYCLE="${5}"
+TRANSPORT="${6}"
+EXPIRED_TIMESTAMP_BOT="${7}"
 
 tunnel_name="VMESS"
 tunnel_type="VMESS"

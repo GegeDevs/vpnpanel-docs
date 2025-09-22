@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-USERNAME="$1"
-PASSWORD="$2"
-EXPIRED="$3"
-TRANSPORT="${4:-all}"
-EXPIRED_TIMESTAMP_BOT="$5"
+USERNAME="${1}"
+PASSWORD="${2}"
+EXPIRED="${3}"
+TRANSPORT="${4}"
+EXPIRED_TIMESTAMP_BOT="${5}"
 
 tunnel_name="VMESS"
 tunnel_type="VMESS"
