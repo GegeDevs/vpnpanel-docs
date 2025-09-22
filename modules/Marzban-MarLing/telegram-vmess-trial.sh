@@ -74,7 +74,7 @@ link_ws=$(echo "${res_json}" | jq -r '.links[0]')
 link_xhttp=$(echo "${res_json}" | jq -r '.links[1]')
 
 echo -e "HTML_CODE"
-echo -e "<b>+++++ ${tunnel_name} Account Created +++++</b>"
+echo -e "<b>+++++ ${tunnel_name} Trial Account Created +++++</b>"
 echo -e "Username: <code>${USERNAME}</code>"
 echo -e "Password: <code>${PASSWORD}</code>"
 echo -e "Expired: <code>$(date -d "@${expire}" '+%Y-%m-%d %H:%M:%S')</code>"
