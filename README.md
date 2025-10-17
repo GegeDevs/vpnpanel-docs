@@ -137,6 +137,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 | 🛡️ Socks5 | `socks5` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | 🪽 Hysteria1 | `hysteria1` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
 | ⚡️ Hysteria2 | `hysteria2` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
+| 🌡 Noobz VPN | `noobz` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
 | 🎨 UDP Custom | `udpcustom` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
 
 *Command Format*
@@ -164,7 +165,7 @@ Register your VPS IP Address to this bot [GegeVPS AutoScript](https://t.me/GegeV
 | 🦈 VMess Quota-Based | `vmessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
 | 🐬 VLess Quota-Based | `vlessqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
 | 🐎 Trojan Quota-Based | `trojanqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
-| 🧪 NoobzVPN | `noobz` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
+| 🧪 NoobzVPN Quota-Based | `noobzqb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock` |
 | ⚡️ Hysteria 2 Quota-Based | `hysteria2qb` | `info` | `create`, `extend`,<br/> `delete`, `checklogin`,<br/> `lock`, `unlock`,<br/> `trial` |
 
 *Command Format*
